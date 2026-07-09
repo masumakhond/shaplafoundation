@@ -1,0 +1,96 @@
+:root {
+  /* ---- Brand Colors ---- */
+  /* Rooted in the original Shapla Foundation green — growth, hope, and life.
+     Warm gold accent carries affection and compassion without pink tones. */
+  --color-primary: #00A651;        /* Shapla green — trust, growth, humanity */
+  --color-primary-dark: #007A42;   /* deeper green — hover states, grounded warmth */
+  --color-primary-light: #E8F7EF;  /* soft mint — gentle, nurturing section tints */
+  --color-accent: #FFCD05;         /* warm golden amber — generosity, care, hope */
+  --color-accent-dark: #C98A10;    /* accent hover */
+  --color-accent-light: #FEF6E6;   /* pale gold tint for badges & highlights */
+  --color-dark: #1A2420;           /* green-tinted charcoal — soft, readable */
+  --color-gray-700: #4A5652;       /* secondary text */
+  --color-gray-400: #94A39C;       /* muted sage-gray for borders & placeholders */
+  --color-light: #ffffff;
+  --color-bg-alt: #F5FAF7;         /* calm green-cream — welcoming, peaceful */
+  --color-card-soft-1: #E8F7EF;    /* soft mint */
+  --color-card-soft-2: #FEF8EE;    /* soft warm cream */
+  --color-card-soft-3: #F0F7F4;    /* soft sage */
+  --color-card-soft-4: #FFF6E8;    /* soft gold cream */
+
+  /* ---- RGB channel (for translucent overlays & focus rings) ---- */
+  --color-primary-rgb: 0, 166, 81;
+
+  /* ---- Typography ---- */
+  /* Jost — clean, modern sans-serif used across headings and body */
+  --font-heading: 'Jost', system-ui, sans-serif;
+  --font-body: 'Jost', system-ui, sans-serif;
+  --fs-display: clamp(2.75rem, 6vw, 4.25rem);   /* hero headline */
+  --fs-h1: clamp(2.5rem, 5vw, 3.75rem);
+  --fs-h2: clamp(1.875rem, 3.5vw, 2.875rem);    /* section titles */
+  --fs-h3: clamp(1.25rem, 2vw, 1.5rem);
+  --fs-lead: clamp(1.125rem, 2vw, 1.3125rem);   /* intro paragraphs */
+  --fs-body: 1.0625rem;
+  --fs-small: 0.9375rem;
+  --fs-stat: clamp(2.25rem, 4.5vw, 3.25rem);
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --lh-tight: 1.1;
+  --lh-heading: 1.15;
+  --lh-body: 1.75;
+  --ls-heading: -0.02em;
+  --ls-eyebrow: 0.12em;
+
+  /* ---- Spacing ---- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.75rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+  --space-2xl: 7.5rem;
+  --space-3xl: 9rem;
+  --space-section-header: 3.5rem;   /* gap below section titles */
+  --space-card: 2.25rem;            /* inner card padding */
+
+  /* ---- Radius & Shadow ---- */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --shadow-card: 0 4px 20px rgba(26, 36, 32, 0.06);
+  --shadow-card-hover: 0 8px 30px rgba(26, 36, 32, 0.10);
+
+  /* ---- Buttons ---- */
+  --btn-radius: 999px;
+  --btn-padding-y: 0.875rem;
+  --btn-padding-x: 2rem;
+
+  /* ---- Section Backgrounds ---- */
+  --bg-section-hero: var(--color-primary);
+  --hero-blob-gold: rgba(233, 163, 25, 0.18);
+  --hero-blob-mint: rgba(255, 255, 255, 0.14);
+  --hero-blob-green: rgba(0, 122, 66, 0.35);
+  --bg-section-stats: var(--color-primary);
+  --bg-section-values: var(--color-light);
+  --bg-section-programs: var(--color-bg-alt);
+  --bg-section-stories: var(--color-light);
+  --bg-section-testimonials: var(--color-primary-light);
+  --bg-section-cta: var(--color-primary);
+  --cta-panel-bg: var(--color-light);
+  --cta-card-bg: var(--color-light);
+  --bg-section-partners: var(--color-light);
+  --bg-footer: var(--color-bg-alt);
+
+  /* ---- Layout ---- */
+  --hero-height: 100vh;
+  --hero-height-mobile: 100svh;
+  --mega-menu-min-height: 30vh;   /* compact when few items */
+  --mega-menu-max-height: 75vh;   /* expands until this cap */
+  --z-header: 1030;
+  --z-mega-menu: 1025;
+  --mega-menu-bg: var(--color-light);
+  --transition-base: 0.25s ease;
+  --focus-ring: 0 0 0 3px rgba(var(--color-primary-rgb), 0.35);
+  --carousel-icon-filter: invert(42%) sepia(85%) saturate(600%) hue-rotate(115deg) brightness(92%);
+}
