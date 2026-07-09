@@ -257,6 +257,7 @@ button:focus-visible,
   transition:
     box-shadow var(--transition-base),
     border-color var(--transition-base);
+    padding: 5px 0;
 }
 
 .site-header.is-scrolled {
