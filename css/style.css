@@ -565,9 +565,23 @@ body.is-mega-open {
 }
 
 /* ---- Mobile offcanvas nav ---- */
-.offcanvas-nav .offcanvas-title {
-  font-family: var(--font-heading);
-  font-weight: var(--fw-semibold);
+.offcanvas-nav .offcanvas-header {
+  align-items: center;
+}
+
+.offcanvas-nav__brand {
+  display: flex;
+  align-items: center;
+  max-width: calc(100% - 2.75rem);
+  line-height: 0;
+}
+
+.offcanvas-nav__brand img {
+  display: block;
+  width: auto;
+  height: clamp(2rem, 7vw, 2.75rem);
+  max-width: min(10rem, 58vw);
+  object-fit: contain;
 }
 
 .mobile-nav__list {
