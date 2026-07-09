@@ -1133,18 +1133,7 @@ body.is-mega-open {
   position: relative;
   overflow: hidden;
   padding: var(--space-xl) 0;
-  background:
-    radial-gradient(
-      circle at 12% 18%,
-      rgba(var(--color-primary-rgb), 0.12) 0%,
-      rgba(var(--color-primary-rgb), 0) 42%
-    ),
-    radial-gradient(
-      circle at 90% 86%,
-      rgba(233, 163, 25, 0.12) 0%,
-      rgba(233, 163, 25, 0) 36%
-    ),
-    linear-gradient(180deg, #f7fcf9 0%, #eef8f2 100%);
+  background:var(--color-card-soft-1);
 }
 
 .section-awaiting::before,
@@ -1184,9 +1173,7 @@ body.is-mega-open {
   gap: var(--space-md);
   align-items: center;
   padding: clamp(1.2rem, 2vw, 1.8rem) clamp(1.2rem, 2.5vw, 2.2rem);
-  background:
-    linear-gradient(145deg, rgba(0, 166, 81, 0.1) 0%, rgba(233, 163, 25, 0.08) 100%),
-    var(--color-light);
+  background:var(--color-card-soft-2);
   border: 1px solid rgba(var(--color-primary-rgb), 0.18);
   border-radius: var(--radius-lg);
   box-shadow: 0 12px 28px rgba(26, 36, 32, 0.08);
