@@ -108,7 +108,7 @@
             <a
               href="https://www.paypal.com/donate/?hosted_button_id=SG6KT5EYHV5QE"
               class="btn-pill btn-primary-pill"
-              >Donate</a
+              >Sponsor a Child</a
             >
           </div>
 
@@ -652,7 +652,7 @@
           <a
             href="https://www.paypal.com/donate/?hosted_button_id=SG6KT5EYHV5QE"
             class="btn-pill btn-primary-pill w-100"
-            >Donate</a
+            >Sponsor a Child</a
           >
         </div>
       </div>
@@ -680,11 +680,7 @@
                 <a href="/sponsor-a-child" class="btn-pill btn-accent-pill"
                   >Sponsor a Child</a
                 >
-                <a
-                  href="https://www.paypal.com/donate/?hosted_button_id=SG6KT5EYHV5QE"
-                  class="btn-pill btn-outline-pill btn-outline-pill--light"
-                  >Donate Once</a
-                >
+                
               </div>
               <p class="hero-trust">
                 <i class="bi bi-shield-check" aria-hidden="true"></i>
@@ -709,36 +705,47 @@
               </div>
               <div class="hero-sticker hero-sticker--kids">
                 <i class="bi bi-people-fill" aria-hidden="true"></i>
-                600+ kids
+                60+ kids
               </div>
             </div>
           </div>
 
-          <div
-            class="hero-color-strip mt-5 mt-lg-0"
-            aria-label="Key sponsorship highlights"
-          >
-            <article class="hero-color-card hero-color-card--green">
-              <i class="bi bi-eye" aria-hidden="true"></i>
-              <div>
-                <strong>Full Transparency</strong>
-                <span>Track every dollar for your child</span>
+          <div class="stats-panel hero-stats-panel" aria-label="Our impact at a glance">
+            <div class="row g-0">
+              <div class="col-6 col-md-3">
+                <div class="stat-block">
+                  <span
+                    class="stat-number"
+                    data-target="60"
+                    data-suffix="+"
+                    >0</span
+                  >
+                  <span class="stat-label">Children Sponsored</span>
+                </div>
               </div>
-            </article>
-            <article class="hero-color-card hero-color-card--green">
-              <i class="bi bi-envelope-heart" aria-hidden="true"></i>
-              <div>
-                <strong>Personal Updates</strong>
-                <span>Letters and photos all year</span>
+              <div class="col-6 col-md-3">
+                <div class="stat-block">
+                  <span class="stat-number" data-target="10" data-suffix="+"
+                    >0</span
+                  >
+                  <span class="stat-label">Years Active</span>
+                </div>
               </div>
-            </article>
-            <article class="hero-color-card hero-color-card--green">
-              <i class="bi bi-graph-up-arrow" aria-hidden="true"></i>
-              <div>
-                <strong>95% Direct Impact</strong>
-                <span>Funds reach the child directly</span>
+              <div class="col-6 col-md-3">
+                <div class="stat-block">
+                  <span class="stat-number" data-target="95" data-suffix="%"
+                    >0</span
+                  >
+                  <span class="stat-label">Donation Reaches the Child</span>
+                </div>
               </div>
-            </article>
+              <div class="col-6 col-md-3">
+                <div class="stat-block">
+                  <span class="stat-number" data-target="4">0</span>
+                  <span class="stat-label">Students Passed SSC This Year</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -865,58 +872,170 @@
           </div>
         </div>
       </section>
+ <!-- 6. Impact Stories Carousel -->
+ <section
+ class="section section-stories"
+ aria-labelledby="stories-heading"
+>
+ <div class="container">
+   <div class="section-title">
+     <span class="section-title__eyebrow">Stories</span>
+     <h3>Success Stories of Shapla Foundation Students</h3>
+     <p>
+       Most of the children selected in our program come from families
+       struggling financially. They are deprived of many opportunities
+       that other children get very easily. Despite the lack of
+       opportunities, they shine bright with their conviction towards
+       their education.
+     </p>
+   </div>
 
-      <!-- 3. Impact Stats Band -->
-      <section class="section section-stats" aria-labelledby="stats-heading">
-        <div class="container">
-          <h2 id="stats-heading" class="visually-hidden">
-            Our Impact at a Glance
-          </h2>
-          <div class="row g-4 justify-content-center">
-            <div class="col-12 col-xl-10">
-              <div class="stats-panel">
-                <div class="row g-0">
-                  <div class="col-6 col-md-3">
-                    <div class="stat-block">
-                      <span
-                        class="stat-number"
-                        data-target="600"
-                        data-suffix="+"
-                        >0</span
-                      >
-                      <span class="stat-label">Children Sponsored</span>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-3">
-                    <div class="stat-block">
-                      <span class="stat-number" data-target="10" data-suffix="+"
-                        >0</span
-                      >
-                      <span class="stat-label">Years Active</span>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-3">
-                    <div class="stat-block">
-                      <span class="stat-number" data-target="95" data-suffix="%"
-                        >0</span
-                      >
-                      <span class="stat-label">Donation Reaches the Child</span>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-3">
-                    <div class="stat-block">
-                      <span class="stat-number" data-target="4">0</span>
-                      <span class="stat-label"
-                        >Students Passed SSC This Year</span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+   <div
+     id="impactStoriesCarousel"
+     class="carousel slide"
+     data-bs-ride="carousel"
+     data-bs-interval="6000"
+   >
+     <div class="carousel-indicators">
+       <button
+         type="button"
+         data-bs-target="#impactStoriesCarousel"
+         data-bs-slide-to="0"
+         class="active"
+         aria-current="true"
+         aria-label="Slide 1: SSC exam success"
+       ></button>
+       <button
+         type="button"
+         data-bs-target="#impactStoriesCarousel"
+         data-bs-slide-to="1"
+         aria-label="Slide 2: Library milestone"
+       ></button>
+       <button
+         type="button"
+         data-bs-target="#impactStoriesCarousel"
+         data-bs-slide-to="2"
+         aria-label="Slide 3: Donor thank-you"
+       ></button>
+     </div>
+
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <div class="row justify-content-center">
+           <div class="col-lg-8">
+             <article class="story-slide__card">
+               <!-- replace with real photo -->
+               <img
+                 class="story-slide__image"
+                 src="./images/success-stories/kabir-thanking-his-sponsor-tashfiq-shah.png"
+                 alt="Kabir thanking his sponsor Tashfiq Shah"
+                 width="800"
+                 height="450"
+               />
+               <div class="story-slide__body">
+                 <h3>Kabir Hossain Thanks His Sponsor Tashfiq Shah</h3>
+                 <p>
+                   Kabir Hossain, one of our sponsored students, has
+                   successfully passed his SSC exams with an excellent
+                   GPA of 4.56 out of 5. Kabir has always shown great
+                   dedication to his studies despite many challenges at
+                   home. His achievement reflects his hard work and
+                   strong will to succeed. He is now preparing for
+                   college, ready to take on new goals and opportunities.
+                 </p>
+               </div>
+             </article>
+           </div>
+         </div>
+       </div>
+
+       <div class="carousel-item">
+         <div class="row justify-content-center">
+           <div class="col-lg-8">
+             <article class="story-slide__card">
+               <!-- replace with real photo -->
+               <img
+                 class="story-slide__image"
+                 src="./images/success-stories/habiba-thanking-his-sponsor.png"
+                 alt="Habiba thanking her sponsor Md. Shahjahan"
+                 width="800"
+                 height="450"
+               />
+               <div class="story-slide__body">
+                 <h3>
+                   Umme Habiba Oishi Thanks Her Sponsor Mst. Shahina
+                 </h3>
+                 <p>
+                   We’re proud to share that Habiba has passed her SSC
+                   examinations with a GPA of 4.44 out of 5. Habiba has
+                   consistently shown determination in her studies, even
+                   while managing tough personal circumstances. Her
+                   result is a reflection of her perseverance and focus.
+                   As she looks forward to college life, we’re excited to
+                   see her continue to grow and achieve her dreams.
+                 </p>
+               </div>
+             </article>
+           </div>
+         </div>
+       </div>
+
+       <div class="carousel-item">
+         <div class="row justify-content-center">
+           <div class="col-lg-8">
+             <article class="story-slide__card">
+               <!-- replace with real photo -->
+               <img
+                 class="story-slide__image"
+                 src="./images/success-stories/akash-thanking-his-sponsor.png"
+                 alt="Akash thanking his sponsor Md. Abdul Halim"
+                 width="800"
+                 height="450"
+               />
+               <div class="story-slide__body">
+                 <h3>Md. Akash Ali Thanks His Sponsor Mr. Zahid</h3>
+                 <p>
+                   Akash’s father runs a small tea shop to maintain their
+                   family. His father’s little income from the shop did
+                   not stop Akash from pursuing his passion to study. He
+                   has been resilient throughout the challenges he faced.
+                   He has been one of the most hard working kids in our
+                   program.
+                 </p>
+               </div>
+             </article>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <button
+       class="carousel-control-prev"
+       type="button"
+       data-bs-target="#impactStoriesCarousel"
+       data-bs-slide="prev"
+       aria-label="Previous story"
+     >
+       <span
+         class="carousel-control-prev-icon"
+         aria-hidden="true"
+       ></span>
+     </button>
+     <button
+       class="carousel-control-next"
+       type="button"
+       data-bs-target="#impactStoriesCarousel"
+       data-bs-slide="next"
+       aria-label="Next story"
+     >
+       <span
+         class="carousel-control-next-icon"
+         aria-hidden="true"
+       ></span>
+     </button>
+   </div>
+ </div>
+</section>
 
       <!-- 5. Our Programs -->
       <section
@@ -1039,171 +1158,7 @@
         </div>
       </section>
 
-      <!-- 6. Impact Stories Carousel -->
-      <section
-        class="section section-stories"
-        aria-labelledby="stories-heading"
-      >
-        <div class="container">
-          <div class="section-title">
-            <span class="section-title__eyebrow">Stories</span>
-            <h3>Success Stories of Shapla Foundation Students</h3>
-            <p>
-              Most of the children selected in our program come from families
-              struggling financially. They are deprived of many opportunities
-              that other children get very easily. Despite the lack of
-              opportunities, they shine bright with their conviction towards
-              their education.
-            </p>
-          </div>
-
-          <div
-            id="impactStoriesCarousel"
-            class="carousel slide"
-            data-bs-ride="carousel"
-            data-bs-interval="6000"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#impactStoriesCarousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1: SSC exam success"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#impactStoriesCarousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2: Library milestone"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#impactStoriesCarousel"
-                data-bs-slide-to="2"
-                aria-label="Slide 3: Donor thank-you"
-              ></button>
-            </div>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                    <article class="story-slide__card">
-                      <!-- replace with real photo -->
-                      <img
-                        class="story-slide__image"
-                        src="./images/success-stories/kabir-thanking-his-sponsor-tashfiq-shah.png"
-                        alt="Kabir thanking his sponsor Tashfiq Shah"
-                        width="800"
-                        height="450"
-                      />
-                      <div class="story-slide__body">
-                        <h3>Kabir Hossain Thanks His Sponsor Tashfiq Shah</h3>
-                        <p>
-                          Kabir Hossain, one of our sponsored students, has
-                          successfully passed his SSC exams with an excellent
-                          GPA of 4.56 out of 5. Kabir has always shown great
-                          dedication to his studies despite many challenges at
-                          home. His achievement reflects his hard work and
-                          strong will to succeed. He is now preparing for
-                          college, ready to take on new goals and opportunities.
-                        </p>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                    <article class="story-slide__card">
-                      <!-- replace with real photo -->
-                      <img
-                        class="story-slide__image"
-                        src="./images/success-stories/habiba-thanking-his-sponsor.png"
-                        alt="Habiba thanking her sponsor Md. Shahjahan"
-                        width="800"
-                        height="450"
-                      />
-                      <div class="story-slide__body">
-                        <h3>
-                          Umme Habiba Oishi Thanks Her Sponsor Mst. Shahina
-                        </h3>
-                        <p>
-                          We’re proud to share that Habiba has passed her SSC
-                          examinations with a GPA of 4.44 out of 5. Habiba has
-                          consistently shown determination in her studies, even
-                          while managing tough personal circumstances. Her
-                          result is a reflection of her perseverance and focus.
-                          As she looks forward to college life, we’re excited to
-                          see her continue to grow and achieve her dreams.
-                        </p>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                    <article class="story-slide__card">
-                      <!-- replace with real photo -->
-                      <img
-                        class="story-slide__image"
-                        src="./images/success-stories/akash-thanking-his-sponsor.png"
-                        alt="Akash thanking his sponsor Md. Abdul Halim"
-                        width="800"
-                        height="450"
-                      />
-                      <div class="story-slide__body">
-                        <h3>Md. Akash Ali Thanks His Sponsor Mr. Zahid</h3>
-                        <p>
-                          Akash’s father runs a small tea shop to maintain their
-                          family. His father’s little income from the shop did
-                          not stop Akash from pursuing his passion to study. He
-                          has been resilient throughout the challenges he faced.
-                          He has been one of the most hard working kids in our
-                          program.
-                        </p>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#impactStoriesCarousel"
-              data-bs-slide="prev"
-              aria-label="Previous story"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#impactStoriesCarousel"
-              data-bs-slide="next"
-              aria-label="Next story"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-            </button>
-          </div>
-        </div>
-      </section>
-
+     
       <!-- 7. Testimonials -->
       <section
         class="section section-testimonials"
