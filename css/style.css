@@ -1586,7 +1586,7 @@ body.is-mega-open {
 .section-stories {
   position: relative;
   overflow: hidden;
-  background:#3db8e847;
+  background:var(--color-card-soft-4);
 }
 
 .section-stories::before {
