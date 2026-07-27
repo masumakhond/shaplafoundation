@@ -1727,24 +1727,10 @@ body.is-mega-open {
 
 /* ---- Reviews ---- */
 .section-reviews {
-  position: relative;
-  overflow: hidden;
   background-color: var(--color-light);
 }
 
-.section-reviews::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 0% 0%, rgba(0, 166, 81, 0.06), transparent 40%),
-    radial-gradient(circle at 100% 100%, rgba(255, 205, 5, 0.08), transparent 35%);
-  pointer-events: none;
-}
-
 .reviews-header {
-  position: relative;
-  z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.75rem;
@@ -1783,11 +1769,7 @@ body.is-mega-open {
   gap: 0.35rem;
   padding: 1.25rem 1.5rem;
   border-radius: var(--radius-md);
-  background: linear-gradient(
-    135deg,
-    rgba(0, 166, 81, 0.08) 0%,
-    rgba(255, 205, 5, 0.1) 100%
-  );
+  background-color: var(--color-primary-light);
   border: 1px solid rgba(0, 166, 81, 0.14);
   width: fit-content;
 }
@@ -1816,8 +1798,6 @@ body.is-mega-open {
 }
 
 .reviews-grid {
-  position: relative;
-  z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.25rem;
@@ -1845,11 +1825,8 @@ body.is-mega-open {
 }
 
 .review-card--accent {
-  background: linear-gradient(
-    160deg,
-    rgba(0, 166, 81, 0.04) 0%,
-    var(--color-light) 55%
-  );
+  background-color: var(--color-bg-alt);
+  border-color: rgba(0, 166, 81, 0.16);
 }
 
 .review-card__top {
@@ -1933,8 +1910,6 @@ body.is-mega-open {
 }
 
 .reviews-footer {
-  position: relative;
-  z-index: 1;
   margin-top: clamp(2rem, 4vw, 2.75rem);
   text-align: center;
 }
@@ -1959,12 +1934,7 @@ body.is-mega-open {
 
 /* ---- FAQ ---- */
 .section-faq {
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at top left, rgba(0, 166, 81, 0.08), transparent 42%),
-    radial-gradient(circle at bottom right, rgba(255, 205, 5, 0.1), transparent 38%),
-    var(--color-bg-alt);
+  background-color: var(--color-bg-alt);
 }
 
 .faq-layout {
@@ -2124,11 +2094,7 @@ body.is-mega-open {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.75rem;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 166, 81, 0.14) 0%,
-    rgba(255, 205, 5, 0.18) 100%
-  );
+  background-color: var(--color-primary-light);
   color: var(--color-primary);
   font-size: 1.05rem;
 }
