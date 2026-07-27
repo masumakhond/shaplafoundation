@@ -739,16 +739,27 @@ body.is-mega-open {
 }
 
 .hero-tag {
-  display: inline-block;
-  font-size: .7rem;
-  font-weight: var(--fw-bold);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.75rem;
+  font-weight: var(--fw-semibold);
   text-transform: uppercase;
   letter-spacing: var(--ls-eyebrow);
-  color: var(--color-dark);
-  background-color: var(--color-accent);
-  padding: var(--space-xs) var(--space-md);
-  border-radius: var(--btn-radius);
+  color: #fff;
+  background: none;
+  padding: 0;
+  border-radius: 0;
   margin-bottom: 0.75rem;
+}
+
+.hero-tag::before {
+  content: '';
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  background-color: var(--color-accent);
+  flex-shrink: 0;
 }
 
 .hero-split__content h1 {
@@ -786,21 +797,63 @@ body.is-mega-open {
 .hero-trust {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: var(--space-sm);
-  font-size: var(--fs-small);
-  font-weight: var(--fw-semibold);
-  color: rgba(255, 255, 255, 0.88);
-  background: rgba(255, 255, 255, 0.12);
-  padding: var(--space-xs) var(--space-md);
-  border-radius: var(--btn-radius);
+  gap: 0.75rem;
+  max-width: 100%;
   margin-bottom: 0;
-  text-align: center;
+  padding: 0.65rem 1rem 0.65rem 0.65rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.16) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  border: 1px solid rgba(255, 205, 5, 0.45);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
 }
 
-.hero-trust i {
-  color: var(--color-accent-light);
+.hero-trust__seal {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: rgba(255, 205, 5, 0.18);
+  border: 1.5px dashed rgba(255, 205, 5, 0.65);
+  color: var(--color-accent);
+  font-size: 1.05rem;
+}
+
+.hero-trust__text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.55rem;
+  font-size: 0.8125rem;
+  font-weight: var(--fw-medium);
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.01em;
+}
+
+.hero-trust__text strong {
+  font-weight: var(--fw-semibold);
+  color: var(--color-light);
+}
+
+.hero-trust__divider {
+  display: none;
+  width: 1px;
+  height: 0.85em;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+@media (min-width: 480px) {
+  .hero-trust__divider {
+    display: inline-block;
+  }
 }
 
 .hero-split__visual {
@@ -986,100 +1039,89 @@ body.is-mega-open {
   }
 }
 
-.stats-panel {
-  background-color: var(--color-light);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 16px 36px rgba(11, 27, 20, 0.22);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  overflow: hidden;
-}
-
+/* ---- Hero Stats Panel (card grid) ---- */
 .hero-stats-panel {
   position: relative;
   z-index: 1;
-  flex-shrink: 0;
   width: 100%;
-  margin-top: clamp(0.75rem, 1.5vw, 1rem);
+  margin-top: clamp(1rem, 2vw, 1.5rem);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
 }
 
-.stats-panel .col-6.col-md-3:nth-child(odd) .stat-block {
-  border-right: 1px solid rgba(17, 94, 59, 0.14);
-}
-
-.stats-panel .col-6.col-md-3:nth-child(-n + 2) .stat-block {
-  border-bottom: 1px solid rgba(17, 94, 59, 0.14);
-}
-
-@media (min-width: 768px) {
-  .stats-panel .col-6.col-md-3:nth-child(odd) .stat-block {
-    border-right: none;
-  }
-
-  .stats-panel .col-6.col-md-3:not(:last-child) .stat-block {
-    border-right: 1px solid rgba(17, 94, 59, 0.14);
-  }
-
-  .stats-panel .col-6.col-md-3:nth-child(-n + 2) .stat-block {
-    border-bottom: none;
-  }
-}
-
-.stat-block {
+.hero-stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: clamp(1.4rem, 2.6vw, 2rem) var(--space-md);
-  background: transparent;
-  height: 100%;
+  padding: clamp(1rem, 2vw, 1.5rem) 0.75rem;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-md);
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
 }
 
-.stat-number {
+.hero-stat-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+.hero-stat-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+}
+
+.hero-stats-panel .stat-number {
   display: block;
   font-family: var(--font-heading);
-  font-size: clamp(2rem, 4.4vw, 3rem);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: var(--fw-bold);
   line-height: var(--lh-tight);
   letter-spacing: var(--ls-heading);
-  color: var(--color-primary);
-  margin-bottom: 0.45rem;
+  color: var(--color-light);
+  margin-bottom: 0.25rem;
 }
 
-.stat-label {
+.hero-stats-panel .stat-label {
   display: block;
-  font-size: clamp(0.9rem, 1.4vw, 1rem);
-  font-weight: var(--fw-semibold);
-  color: var(--color-gray-700);
-  line-height: 1.45;
+  font-size: clamp(0.78rem, 1.2vw, 0.9rem);
+  font-weight: var(--fw-medium);
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.35;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 768px) {
   .hero-stats-panel {
-    margin-top: var(--space-sm);
-  }
-
-  .stat-block {
-    padding: 0.9rem 0.65rem;
-  }
-
-  .stat-number {
-    font-size: clamp(1.65rem, 8vw, 2.25rem);
-  }
-
-  .stat-label {
-    font-size: 0.82rem;
-    line-height: 1.35;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
   }
 }
 
 @media (min-width: 992px) {
-  .hero-stats-panel .stat-block {
-    padding: 0.85rem var(--space-sm);
+  .hero-stats-panel {
+    gap: 1.25rem;
   }
 
-  .hero-stats-panel .stat-number {
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
+  .hero-stat-card {
+    padding: 1.25rem 1rem;
   }
 
-  .hero-stats-panel .stat-label {
-    font-size: 0.875rem;
+  .hero-stat-card__icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    font-size: 1.25rem;
   }
 }
 
