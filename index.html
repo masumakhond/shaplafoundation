@@ -1228,120 +1228,140 @@
       </section>
 
      
-      <!-- 7. Testimonials -->
+      <!-- 7. Reviews -->
       <section
-        class="section section-testimonials"
-        aria-labelledby="testimonials-heading"
+        class="section section-reviews"
+        aria-labelledby="reviews-heading"
       >
         <div class="container">
-          <div class="section-title">
-            <span class="section-title__eyebrow">Testimonials</span>
-            <h2 id="testimonials-heading">What Our Sponsors Say</h2>
-            <p>
-              Hear from the people who make our mission possible, one child at a
-              time.
-            </p>
+          <div class="reviews-header">
+            <div class="reviews-header__intro">
+              <span class="section-title__eyebrow">Reviews</span>
+              <h2 id="reviews-heading">Trusted by Sponsors Worldwide</h2>
+              <p>
+                Real stories from donors who believe in transparent, personal
+                child sponsorship — and the difference it makes every month.
+              </p>
+            </div>
+
+            <div class="reviews-summary" aria-label="Average sponsor rating">
+              <div class="reviews-summary__score">5.0</div>
+              <div
+                class="reviews-summary__stars"
+                aria-hidden="true"
+              >
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="reviews-summary__label">Average sponsor rating</p>
+            </div>
           </div>
 
-          <div class="row row-cols-1 row-cols-md-3 g-4 g-lg-5">
-            <div class="col">
-              <article
-                class="card-custom testimonial-card d-flex flex-column h-100"
+          <div class="reviews-grid">
+            <article class="review-card">
+              <div class="review-card__top">
+                <span class="review-card__icon" aria-hidden="true"
+                  ><i class="bi bi-chat-quote-fill"></i
+                ></span>
+                <span class="review-card__badge"
+                  ><i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                  Verified Sponsor</span
+                >
+              </div>
+              <div
+                class="review-card__stars"
+                aria-label="5 out of 5 stars"
               >
-                <!-- replace with real photo -->
-                <img
-                  class="testimonial-card__avatar"
-                  src="https://placehold.co/100x100/00A651/ffffff?text=JD"
-                  alt="Portrait of sponsor James Davidson"
-                  width="100"
-                  height="100"
-                />
-                <h3 class="testimonial-card__name">James Davidson</h3>
-                <p class="testimonial-card__role">Monthly Sponsor since 2022</p>
-                <p class="testimonial-card__quote">
-                  "Knowing exactly where my donation goes — and seeing my
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="review-card__quote">
+                <p>
+                  Knowing exactly where my donation goes — and seeing my
                   sponsored child's progress each year — makes this the most
-                  meaningful giving I've ever done."
+                  meaningful giving I've ever done.
                 </p>
-                <div
-                  class="testimonial-card__stars"
-                  aria-label="5 out of 5 stars"
+              </blockquote>
+              <footer class="review-card__footer">
+                <cite class="review-card__name">James Davidson</cite>
+                <span class="review-card__role">Monthly Sponsor since 2022</span>
+              </footer>
+            </article>
+
+            <article class="review-card review-card--accent">
+              <div class="review-card__top">
+                <span class="review-card__icon" aria-hidden="true"
+                  ><i class="bi bi-chat-quote-fill"></i
+                ></span>
+                <span class="review-card__badge"
+                  ><i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                  Verified Sponsor</span
                 >
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                </div>
-              </article>
-            </div>
-            <div class="col">
-              <article
-                class="card-custom testimonial-card d-flex flex-column h-100"
+              </div>
+              <div
+                class="review-card__stars"
+                aria-label="5 out of 5 stars"
               >
-                <!-- replace with real photo -->
-                <img
-                  class="testimonial-card__avatar"
-                  src="https://placehold.co/100x100/E9A319/ffffff?text=SP"
-                  alt="Portrait of sponsor Sarah Patel"
-                  width="100"
-                  height="100"
-                />
-                <h3 class="testimonial-card__name">Sarah Patel</h3>
-                <p class="testimonial-card__role">Monthly Sponsor since 2020</p>
-                <p class="testimonial-card__quote">
-                  "The regular updates and photos from my sponsored child keep
-                  me connected to a world I'd otherwise never see. Shapla
-                  Foundation makes it personal."
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="review-card__quote">
+                <p>
+                  The regular updates and photos from my sponsored child keep me
+                  connected to a world I'd otherwise never see. Shapla Foundation
+                  makes it personal.
                 </p>
-                <div
-                  class="testimonial-card__stars"
-                  aria-label="5 out of 5 stars"
+              </blockquote>
+              <footer class="review-card__footer">
+                <cite class="review-card__name">Sarah Patel</cite>
+                <span class="review-card__role">Monthly Sponsor since 2020</span>
+              </footer>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__top">
+                <span class="review-card__icon" aria-hidden="true"
+                  ><i class="bi bi-chat-quote-fill"></i
+                ></span>
+                <span class="review-card__badge"
+                  ><i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                  Corporate Partner</span
                 >
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                </div>
-              </article>
-            </div>
-            <div class="col">
-              <article
-                class="card-custom testimonial-card d-flex flex-column h-100"
+              </div>
+              <div
+                class="review-card__stars"
+                aria-label="5 out of 5 stars"
               >
-                <!-- replace with real photo -->
-                <img
-                  class="testimonial-card__avatar"
-                  src="https://placehold.co/100x100/007A42/ffffff?text=MR"
-                  alt="Portrait of sponsor Michael Rodriguez"
-                  width="100"
-                  height="100"
-                />
-                <h3 class="testimonial-card__name">Michael Rodriguez</h3>
-                <p class="testimonial-card__role">
-                  Corporate Partner since 2021
-                </p>
-                <p class="testimonial-card__quote">
-                  "Our company sponsors five children through Shapla Foundation.
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+                <i class="bi bi-star-fill" aria-hidden="true"></i>
+              </div>
+              <blockquote class="review-card__quote">
+                <p>
+                  Our company sponsors five children through Shapla Foundation.
                   The transparency and impact reporting give us confidence that
-                  every dollar matters."
+                  every dollar matters.
                 </p>
-                <div
-                  class="testimonial-card__stars"
-                  aria-label="5 out of 5 stars"
-                >
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                  <i class="bi bi-star-fill" aria-hidden="true"></i>
-                </div>
-              </article>
-            </div>
+              </blockquote>
+              <footer class="review-card__footer">
+                <cite class="review-card__name">Michael Rodriguez</cite>
+                <span class="review-card__role">Corporate Partner since 2021</span>
+              </footer>
+            </article>
           </div>
 
-          <div class="text-center mt-5">
+          <div class="reviews-footer">
             <a href="/reviews" class="btn-pill btn-outline-pill"
               >View All Reviews</a
             >
