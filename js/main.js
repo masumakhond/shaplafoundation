@@ -146,6 +146,7 @@
 
     function openMega(panelId, item) {
       clearTimeout(closeTimer);
+      header.style.setProperty('--mega-backdrop-top', header.offsetHeight + 'px');
       megaItems.forEach(function (navItem) {
         navItem.classList.toggle('is-active', navItem === item);
         setExpanded(navItem, navItem === item);
@@ -160,6 +161,7 @@
 
     function closeMega() {
       clearTimeout(closeTimer);
+      header.style.removeProperty('--mega-backdrop-top');
       megaMenu.classList.remove('is-open');
       megaMenu.setAttribute('aria-hidden', 'true');
       header.classList.remove('is-mega-open');

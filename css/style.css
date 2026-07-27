@@ -270,7 +270,6 @@ button:focus-visible,
   transition:
     box-shadow var(--transition-base),
     border-color var(--transition-base);
-    padding: 5px 0;
 }
 
 .site-header.is-scrolled {
@@ -279,8 +278,12 @@ button:focus-visible,
 }
 
 .site-header.is-mega-open {
-  border-color: var(--color-primary-light);
-  box-shadow: var(--shadow-card);
+  border-bottom-color: transparent;
+  box-shadow: none;
+}
+
+.site-header > .container {
+  position: relative;
 }
 
 .site-header__inner {
@@ -289,7 +292,8 @@ button:focus-visible,
   justify-content: space-between;
   flex-wrap: nowrap;
   gap: var(--space-sm);
-  min-height: var(--header-height);
+  min-height: 0;
+  padding: 0.5rem 0 0;
   position: relative;
   z-index: 2;
 }
@@ -505,8 +509,9 @@ button:focus-visible,
 .mega-menu {
   position: absolute;
   top: 100%;
-  left: 0;
-  right: 0;
+  left: 50%;
+  width: 100vw;
+  margin-left: -50vw;
   height: auto;
   min-height: 0;
   max-height: var(--mega-menu-max-height);
@@ -516,7 +521,7 @@ button:focus-visible,
   transition: height 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* Bridge gap between nav links and dropdown panel */
+/* Invisible hover bridge so the menu stays open between nav and panel */
 .mega-menu::before {
   content: '';
   position: absolute;
@@ -537,8 +542,10 @@ button:focus-visible,
 
 .mega-menu__backdrop {
   position: fixed;
-  inset: 0;
-  top: var(--header-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: var(--mega-backdrop-top, var(--header-height));
   background-color: rgba(26, 36, 32, 0.45);
   opacity: 0;
   transition: opacity 0.35s ease;
@@ -555,20 +562,18 @@ button:focus-visible,
   min-height: var(--mega-menu-min-height);
   max-height: var(--mega-menu-max-height);
   background-color: var(--mega-menu-bg);
+  border-top: 1px solid var(--color-primary-light);
   border-bottom: 1px solid var(--color-primary-light);
   box-shadow: var(--shadow-card-hover);
-  transform: translateY(-1.5rem);
   opacity: 0;
-  transition:
-    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
-    opacity 0.35s ease;
+  transition: opacity 0.3s ease;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 .mega-menu.is-open .mega-menu__panel {
-  transform: translateY(0);
   opacity: 1;
+  margin-top: -1px;
 }
 
 .mega-menu__panel > .container {
