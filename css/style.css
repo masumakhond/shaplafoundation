@@ -2113,20 +2113,56 @@ body.is-mega-open {
   }
 
   .section.section-hero {
-    padding: 0.5rem 0 0.75rem;
+    padding: 1.25rem 0 1.75rem;
   }
 
-  .section-title {
-    margin-bottom: var(--space-lg);
+  .section-hero > .container {
+    gap: 1.5rem;
+  }
+
+  .hero-split {
+    gap: 1.75rem;
+  }
+
+  .hero-tag {
+    margin-bottom: 1rem;
+  }
+
+  .hero-split__content h1 {
+    margin-bottom: 1rem;
+  }
+
+  .hero-lead {
+    margin-bottom: 1.25rem;
   }
 
   .hero-actions {
     flex-direction: column;
     align-items: center;
+    gap: 0.875rem;
+    margin-bottom: 1.25rem;
   }
 
   .hero-actions .btn-pill {
     width: 100%;
     max-width: 220px;
+  }
+
+  .hero-trust {
+    margin-top: 0.25rem;
+  }
+
+  .hero-split__visual {
+    margin-top: 0.5rem;
+    padding: var(--space-sm);
+  }
+
+  .hero-stats-panel {
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+
+  .section-title {
+    margin-bottom: var(--space-lg);
   }
 }
