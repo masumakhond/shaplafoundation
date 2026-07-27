@@ -32,9 +32,7 @@
     <!-- 1. Header -->
     <header class="site-header" id="siteHeader">
       <div class="container">
-        <div
-          class="site-header__inner d-flex align-items-center justify-content-between"
-        >
+        <div class="site-header__inner">
           <a
             href="/"
             class="site-header__logo"
@@ -101,15 +99,16 @@
             </ul>
           </nav>
 
-          <div class="d-none d-lg-flex align-items-center gap-3">
+          <div class="site-header__actions d-none d-lg-flex align-items-center">
             <a href="tel:+18885551234" class="site-header__phone">
               <i class="bi bi-telephone-fill" aria-hidden="true"></i>
-              (888) 555-1234
+              <span class="site-header__phone-text">(888) 555-1234</span>
             </a>
             <a
               href="https://www.paypal.com/donate/?hosted_button_id=SG6KT5EYHV5QE"
-              class="btn-pill btn-primary-pill"
-              >Sponsor a Child</a
+              class="btn-pill btn-primary-pill site-header__cta"
+              ><span class="site-header__cta-long">Sponsor a Child</span
+              ><span class="site-header__cta-short">Sponsor</span></a
             >
           </div>
 

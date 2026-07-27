@@ -89,6 +89,7 @@
   --hero-height-mobile: 85svh;
   --mega-menu-min-height: 30vh;   /* compact when few items */
   --mega-menu-max-height: 75vh;   /* expands until this cap */
+  --header-height: 4.25rem;
   --z-header: 1030;
   --z-mega-menu: 1025;
   --mega-menu-bg: var(--color-light);
