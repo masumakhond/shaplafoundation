@@ -1434,7 +1434,7 @@ body.is-mega-open {
 
 /* ---- Programs (JAAGO-style project cards) ---- */
 .section-programs {
-  background-color: var(--color-light);
+  background-color: var(--color-bg-alt);
 }
 
 .program-card {
