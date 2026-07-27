@@ -184,6 +184,19 @@ button:focus-visible,
   color: var(--color-light);
 }
 
+.btn-donate-pill {
+  background-color: var(--color-donate);
+  border-color: var(--color-donate);
+  color: var(--color-light);
+}
+
+.btn-donate-pill:hover,
+.btn-donate-pill:focus-visible {
+  background-color: var(--color-donate-dark);
+  border-color: var(--color-donate-dark);
+  color: var(--color-light);
+}
+
 .btn-outline-pill--light {
   background-color: transparent;
   border-color: var(--color-light);

@@ -8,6 +8,8 @@
   --color-accent: #FFCD05;         /* warm golden amber — generosity, care, hope */
   --color-accent-dark: #C98A10;    /* accent hover */
   --color-accent-light: #FEF6E6;   /* pale gold tint for badges & highlights */
+  --color-donate: #E0679F;         /* rose pink — donate CTAs */
+  --color-donate-dark: #C44F85;    /* donate hover */
   --color-dark: #1A2420;           /* green-tinted charcoal — soft, readable */
   --color-gray-700: #4A5652;       /* secondary text */
   --color-gray-400: #94A39C;       /* muted sage-gray for borders & placeholders */
