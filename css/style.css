@@ -2032,11 +2032,10 @@ body.is-mega-open {
   font-weight: var(--fw-bold);
   text-transform: uppercase;
   letter-spacing: var(--ls-eyebrow);
-  color: var(--color-primary);
-  background-color: var(--color-primary-light);
+  color: #ffffff;
   padding: var(--space-xs) var(--space-md);
   border-radius: var(--btn-radius);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-xs);
 }
 
 .cta-panel__header h2 {
