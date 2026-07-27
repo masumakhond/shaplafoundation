@@ -1990,7 +1990,7 @@ body.is-mega-open {
 .section-cta {
   position: relative;
   overflow: hidden;
-  background-color: var(--bg-section-cta);
+  background-color: var(--color-donate);
   color: var(--color-light);
 }
 
