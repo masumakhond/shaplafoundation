@@ -179,8 +179,8 @@ button:focus-visible,
 
 .btn-accent-pill:hover,
 .btn-accent-pill:focus-visible {
-  background-color: var(--color-accent-dark);
-  border-color: var(--color-accent-dark);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
   color: var(--color-light);
 }
 
@@ -388,13 +388,13 @@ button:focus-visible,
   align-items: center;
   gap: var(--space-xs);
   font-weight: var(--fw-medium);
-  color: var(--color-gray-700);
+  color: var(--color-donate);
   white-space: nowrap;
 }
 
 .site-header__phone:hover,
 .site-header__phone:focus-visible {
-  color: var(--color-primary);
+  color: var(--color-donate-dark);
 }
 
 .site-header__toggle {
@@ -457,8 +457,8 @@ button:focus-visible,
     height: 2.25rem;
     padding: 0;
     border-radius: 50%;
-    color: var(--color-primary);
-    background-color: var(--color-primary-light);
+    color: var(--color-donate);
+    background-color: rgba(224, 103, 159, 0.12);
   }
 
   .site-header__actions .btn-pill {
@@ -1597,6 +1597,10 @@ body.is-mega-open {
   justify-content: center;
   min-width: 10.5rem;
   white-space: nowrap;
+}
+
+.awaiting-banner__actions .btn-pill:hover {
+  border-color: #fff;
 }
 
 .awaiting-banner__metric {
@@ -2789,6 +2793,15 @@ body.is-mega-open {
 .site-footer a:hover,
 .site-footer a:focus-visible {
   color: var(--color-primary);
+}
+
+.site-footer a[href^="tel:"] {
+  color: var(--color-donate);
+}
+
+.site-footer a[href^="tel:"]:hover,
+.site-footer a[href^="tel:"]:focus-visible {
+  color: var(--color-donate-dark);
 }
 
 .site-footer ul {
