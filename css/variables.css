@@ -69,7 +69,7 @@
   --btn-padding-x: 2rem;
 
   /* ---- Section Backgrounds ---- */
-  --bg-section-hero: var(--color-primary);
+  --bg-section-hero: var(--color-bg-alt);
   --hero-blob-gold: rgba(233, 163, 25, 0.18);
   --hero-blob-mint: rgba(255, 255, 255, 0.14);
   --hero-blob-green: rgba(0, 122, 66, 0.35);
