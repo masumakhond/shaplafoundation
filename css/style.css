@@ -2480,7 +2480,7 @@ body.is-mega-open {
 .section-cta {
   position: relative;
   overflow: hidden;
-  background-color: var(--color-bg-alt);
+  background-color: var(--color-primary-light);
   color: var(--color-light);
 }
 
