@@ -2288,7 +2288,7 @@ body.is-mega-open {
 .reviews-summary__stars {
   display: flex;
   gap: 0.15rem;
-  color: var(--color-accent-dark);
+  color: var(--color-accent);
   font-size: 0.95rem;
 }
 
@@ -2373,7 +2373,7 @@ body.is-mega-open {
   display: flex;
   gap: 0.15rem;
   margin-bottom: 1rem;
-  color: var(--color-accent-dark);
+  color: var(--color-accent);
   font-size: 0.9rem;
 }
 
