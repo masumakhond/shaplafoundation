@@ -2011,8 +2011,7 @@ body.is-mega-open {
   border-radius: 50%;
   opacity: 1;
   background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(var(--color-primary-rgb), 0.18);
-  box-shadow: 0 8px 20px rgba(26, 36, 32, 0.12);
+  border: 1px solid rgb(0 166 81 / 39%);
   transition:
     transform var(--transition-base),
     box-shadow var(--transition-base),
@@ -2714,9 +2713,11 @@ body.is-mega-open {
 /* ---- Partners ---- */
 .section-partners {
   background-color: var(--bg-section-partners);
+  overflow-x: clip;
 }
 
 .partners-slider {
+  width: 100%;
   overflow: hidden;
   -webkit-mask-image: linear-gradient(
     90deg,
