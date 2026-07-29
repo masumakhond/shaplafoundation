@@ -1251,7 +1251,6 @@ body.is-mega-open {
   max-width: 100%;
   margin-bottom: 0;
   padding: 0.65rem 1rem 0.65rem 0.65rem;
-  background: var(--color-light);
   border: 1px solid rgba(0, 166, 81, 0.12);
   border-left: 3px solid var(--color-accent);
   border-radius: var(--radius-sm);
