@@ -2228,7 +2228,8 @@ body.is-mega-open {
 
 /* ---- Reviews ---- */
 .section-reviews {
-  background-color: var(--color-light);
+  background-color: linear-gradient(
+    180deg, #f5faf7, transparent);
 }
 
 .reviews-header {
