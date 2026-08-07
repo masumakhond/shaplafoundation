@@ -27,6 +27,14 @@
   margin-bottom: 0;
 }
 
+.common-sec img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
 .common-sec a:not(.inner_cta__card):not(.btn-pill):not(.theme-btn):not(.sponsor-a-child-cta__btn) {
   color: var(--color-primary);
   text-decoration: underline;
