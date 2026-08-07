@@ -1,0 +1,36 @@
+/*=============================
+  Section (common-sec) Styles
+=============================*/
+.common-sec {
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    z-index: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .common-sec:before {
+    display: none;
+  }
+  
+  .common-sec:nth-child(odd) {
+    background-color: var(--color-primary-light);
+  }
+  
+  .common-sec:nth-child(even) {
+    background-color: var(--color-pink-light);
+  }
+  
+  .common-sec:has(.common-sec) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .common-sec:nth-child(odd) + div > .secPadding:nth-child(odd) {
+      background-color: var(--color-accent-light);
+  }
+  .common-sec:nth-child(even) + div > .secPadding:nth-child(even) {
+      background-color: var(--color-accent-light);
+  }
+  

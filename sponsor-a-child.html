@@ -1,0 +1,962 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <meta
+      name="description"
+      content="Shapla Foundation connects generous sponsors with underprivileged children across Bangladesh — funding education, health, and hope for a better future."
+    />
+    <title>Shapla Foundation | Sponsor a Child's Education in Bangladesh</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/template.css" />
+    <link rel="stylesheet" href="css/inner-pages.css" />
+  </head>
+  <body>
+    <!-- 1. Header -->
+    <header class="site-header" id="siteHeader">
+      <div class="container">
+        <div class="site-header__inner">
+          <a
+            href="/"
+            class="site-header__logo"
+            aria-label="Shapla Foundation home"
+          >
+            <img
+              src="./images/shaplafoundation-logo.png"
+              alt="Shapla Foundation"
+              width="160"
+              height="61"
+            />
+          </a>
+
+          <nav class="site-nav d-none d-lg-block" aria-label="Main navigation">
+            <ul class="nav site-nav__list">
+              <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+              </li>
+
+              <li class="nav-item nav-item--mega" data-mega="sponsor-child">
+                <button
+                  type="button"
+                  class="nav-link nav-link--mega"
+                  aria-expanded="false"
+                  aria-controls="mega-sponsor-child"
+                >
+                  Sponsor a Child
+                  <i
+                    class="bi bi-chevron-down nav-link__chevron"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </li>
+
+              <li class="nav-item nav-item--mega" data-mega="sponsor-project">
+                <button
+                  type="button"
+                  class="nav-link nav-link--mega"
+                  aria-expanded="false"
+                  aria-controls="mega-sponsor-project"
+                >
+                  Sponsor a Project
+                  <i
+                    class="bi bi-chevron-down nav-link__chevron"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </li>
+
+              <li class="nav-item nav-item--mega" data-mega="about">
+                <button
+                  type="button"
+                  class="nav-link nav-link--mega"
+                  aria-expanded="false"
+                  aria-controls="mega-about"
+                >
+                  About Us
+                  <i
+                    class="bi bi-chevron-down nav-link__chevron"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="site-header__actions d-none d-lg-flex align-items-center">
+            <a href="tel:+18885551234" class="site-header__phone">
+              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+              <span class="site-header__phone-text">(888) 555-1234</span>
+            </a>
+            <a
+              href="https://www.paypal.com/donate/?hosted_button_id=SG6KT5EYHV5QE"
+              class="btn-pill btn-accent-pill site-header__cta"
+              ><span class="site-header__cta-long">Sponsor a Child</span
+              ><span class="site-header__cta-short">Sponsor</span></a
+            >
+          </div>
+
+          <button
+            class="site-header__toggle d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileNav"
+            aria-controls="mobileNav"
+            aria-label="Open navigation menu"
+          >
+            <i class="bi bi-list" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <!-- Desktop mega menu — half-screen panel -->
+        <div class="mega-menu" id="megaMenu" aria-hidden="true">
+          <div
+            class="mega-menu__backdrop"
+            data-mega-close
+            aria-hidden="true"
+          ></div>
+          <div class="mega-menu__panel">
+            <div class="container h-100">
+              <div class="mega-menu__panels">
+                <div
+                  class="mega-menu__content"
+                  id="mega-sponsor-child"
+                  data-panel="sponsor-child"
+                  hidden
+                >
+                  <div class="row g-4 g-xl-5">
+                    <div class="col-lg-4 mega-menu__intro">
+                      <p class="mega-menu__eyebrow">Child Sponsorship</p>
+                      <h3 class="mega-menu__title">
+                        Give a child the gift of education
+                      </h3>
+                      <p class="mega-menu__desc">
+                        Connect with a child in Bangladesh for as little as
+                        $30/month and follow their journey with full
+                        transparency.
+                      </p>
+                      <a
+                        href="/sponsor-a-child"
+                        class="btn-pill btn-accent-pill"
+                        >Sponsor a Child</a
+                      >
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mega-menu__grid">
+                        <a
+                          href="/sponsor-a-child/awaiting-sponsorship"
+                          class="mega-menu__link"
+                        >
+                          <span class="mega-menu__link-icon"
+                            ><i class="bi bi-people-fill" aria-hidden="true"></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Awaiting Sponsorship</strong>
+                            <small
+                              >Meet children ready for a sponsor today</small
+                            >
+                          </span>
+                        </a>
+                        <a
+                          href="/sponsor-a-child/currently-sponsored"
+                          class="mega-menu__link"
+                        >
+                          <span class="mega-menu__link-icon"
+                            ><i
+                              class="bi bi-person-check-fill"
+                              aria-hidden="true"
+                            ></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Currently Sponsored</strong>
+                            <small
+                              >See children currently under sponsorship</small
+                            >
+                          </span>
+                        </a>
+                        <a href="/sponsor-a-child/faq" class="mega-menu__link">
+                          <span class="mega-menu__link-icon"
+                            ><i
+                              class="bi bi-question-circle-fill"
+                              aria-hidden="true"
+                            ></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Frequently Asked Questions</strong>
+                            <small>Answers to common sponsor questions</small>
+                          </span>
+                        </a>
+                        <a
+                          href="/sponsor-a-child/activity-programs"
+                          class="mega-menu__link"
+                        >
+                          <span class="mega-menu__link-icon"
+                            ><i
+                              class="bi bi-calendar-event-fill"
+                              aria-hidden="true"
+                            ></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Activity Programs</strong>
+                            <small
+                              >Events and activities for sponsored
+                              children</small
+                            >
+                          </span>
+                        </a>
+                        <a
+                          href="/sponsor-a-child/completed-sponsorship"
+                          class="mega-menu__link"
+                        >
+                          <span class="mega-menu__link-icon"
+                            ><i
+                              class="bi bi-check-circle-fill"
+                              aria-hidden="true"
+                            ></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Completed Sponsorship</strong>
+                            <small>Stories from completed sponsorship</small>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="mega-menu__content"
+                  id="mega-sponsor-project"
+                  data-panel="sponsor-project"
+                  hidden
+                >
+                  <div class="row g-4 g-xl-5">
+                    <div class="col-lg-4 mega-menu__intro">
+                      <p class="mega-menu__eyebrow">Community Impact</p>
+                      <h3 class="mega-menu__title">
+                        Fund projects that uplift entire communities
+                      </h3>
+                      <p class="mega-menu__desc">
+                        Support libraries, health programs, and infrastructure
+                        that help children and families thrive together.
+                      </p>
+                      <a
+                        href="/sponsor-a-project"
+                        class="btn-pill btn-primary-pill"
+                        >View Projects</a
+                      >
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mega-menu__grid">
+                        <a
+                          href="/sponsor-a-project/current-projects"
+                          class="mega-menu__link"
+                        >
+                          <span class="mega-menu__link-icon"
+                            ><i class="bi bi-kanban-fill" aria-hidden="true"></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Current Projects</strong>
+                            <small
+                              >Active community projects open for
+                              sponsorship</small
+                            >
+                          </span>
+                        </a>
+                        <a
+                          href="/sponsor-a-project/past-projects"
+                          class="mega-menu__link"
+                        >
+                          <span class="mega-menu__link-icon"
+                            ><i
+                              class="bi bi-clock-history"
+                              aria-hidden="true"
+                            ></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Past Projects</strong>
+                            <small
+                              >Completed projects and their lasting
+                              impact</small
+                            >
+                          </span>
+                        </a>
+                        <a
+                          href="/sponsor-a-project/zakat-donation"
+                          class="mega-menu__link"
+                        >
+                          <span class="mega-menu__link-icon"
+                            ><i class="bi bi-heart-fill" aria-hidden="true"></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Zakat Donation</strong>
+                            <small
+                              >Give your Zakat to support children in
+                              need</small
+                            >
+                          </span>
+                        </a>
+                        <a href="/library" class="mega-menu__link">
+                          <span class="mega-menu__link-icon"
+                            ><i class="bi bi-book-fill" aria-hidden="true"></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Shapla Foundation Library</strong>
+                            <small>Bring books to rural villages</small>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="mega-menu__content"
+                  id="mega-blog"
+                  data-panel="blog"
+                  hidden
+                >
+                  <div class="row g-4 g-xl-5">
+                    <div class="col-lg-4 mega-menu__intro">
+                      <p class="mega-menu__eyebrow">Stories &amp; Updates</p>
+                      <h3 class="mega-menu__title">
+                        See the impact your support creates
+                      </h3>
+                      <p class="mega-menu__desc">
+                        Read success stories, program updates, and news from the
+                        children and communities we serve.
+                      </p>
+                      <a href="/blog" class="btn-pill btn-primary-pill"
+                        >Read the Blog</a
+                      >
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mega-menu__grid">
+                        <a href="/blog/impact-stories" class="mega-menu__link">
+                          <span class="mega-menu__link-icon"
+                            ><i class="bi bi-stars" aria-hidden="true"></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Impact Stories</strong>
+                            <small>Real outcomes from sponsored children</small>
+                          </span>
+                        </a>
+                        <a href="/blog/news" class="mega-menu__link">
+                          <span class="mega-menu__link-icon"
+                            ><i class="bi bi-newspaper" aria-hidden="true"></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>News &amp; Updates</strong>
+                            <small>Latest from Shapla Foundation</small>
+                          </span>
+                        </a>
+                        <a href="/blog/events" class="mega-menu__link">
+                          <span class="mega-menu__link-icon"
+                            ><i
+                              class="bi bi-calendar-event-fill"
+                              aria-hidden="true"
+                            ></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Events &amp; Celebrations</strong>
+                            <small>Pohela Boishakh, Eid, and more</small>
+                          </span>
+                        </a>
+                        <a href="/blog/ssc-success" class="mega-menu__link">
+                          <span class="mega-menu__link-icon"
+                            ><i
+                              class="bi bi-mortarboard-fill"
+                              aria-hidden="true"
+                            ></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Education Milestones</strong>
+                            <small>SSC results and academic wins</small>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="mega-menu__content"
+                  id="mega-about"
+                  data-panel="about"
+                  hidden
+                >
+                  <div class="row g-4 g-xl-5">
+                    <div class="col-lg-4 mega-menu__intro">
+                      <p class="mega-menu__eyebrow">Our Organization</p>
+                      <h3 class="mega-menu__title">
+                        Built on transparency and trust
+                      </h3>
+                      <p class="mega-menu__desc">
+                        Learn about our mission, team, and the values that guide
+                        every program we run in Bangladesh.
+                      </p>
+                      <a href="/about-us" class="btn-pill btn-primary-pill"
+                        >About Us</a
+                      >
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mega-menu__grid">
+                        <a
+                          href="/about-us/sponsored-child-visit-form"
+                          class="mega-menu__link"
+                        >
+                          <span class="mega-menu__link-icon"
+                            ><i
+                              class="bi bi-pin-map-fill"
+                              aria-hidden="true"
+                            ></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Visit Your Child</strong>
+                            <small>Plan a visit to your sponsored child</small>
+                          </span>
+                        </a>
+                        <a href="/about-us/careers" class="mega-menu__link">
+                          <span class="mega-menu__link-icon"
+                            ><i
+                              class="bi bi-briefcase-fill"
+                              aria-hidden="true"
+                            ></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Careers</strong>
+                            <small>Join our team and make a difference</small>
+                          </span>
+                        </a>
+                        <a
+                          href="/about-us/virtual-meeting-with-sponsored-child"
+                          class="mega-menu__link"
+                        >
+                          <span class="mega-menu__link-icon"
+                            ><i
+                              class="bi bi-camera-video-fill"
+                              aria-hidden="true"
+                            ></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Virtual Meeting With Child</strong>
+                            <small
+                              >Connect with your sponsored child online</small
+                            >
+                          </span>
+                        </a>
+                        <a
+                          href="/about-us/success-stories"
+                          class="mega-menu__link"
+                        >
+                          <span class="mega-menu__link-icon"
+                            ><i class="bi bi-trophy-fill" aria-hidden="true"></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Success Stories</strong>
+                            <small>See the impact of your support</small>
+                          </span>
+                        </a>
+                        <a
+                          href="/about-us/meet-the-team"
+                          class="mega-menu__link"
+                        >
+                          <span class="mega-menu__link-icon"
+                            ><i class="bi bi-people-fill" aria-hidden="true"></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Meet the Team</strong>
+                            <small>Meet the people behind our mission</small>
+                          </span>
+                        </a>
+                        <a href="/about-us/reviews" class="mega-menu__link">
+                          <span class="mega-menu__link-icon"
+                            ><i
+                              class="bi bi-chat-quote-fill"
+                              aria-hidden="true"
+                            ></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Reviews</strong>
+                            <small>What sponsors and donors say about us</small>
+                          </span>
+                        </a>
+                        <a
+                          href="/about-us/awards-and-affiliations"
+                          class="mega-menu__link"
+                        >
+                          <span class="mega-menu__link-icon"
+                            ><i class="bi bi-award-fill" aria-hidden="true"></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Affiliations</strong>
+                            <small>Awards and partner organizations</small>
+                          </span>
+                        </a>
+                        <a href="/about-us/contact-us" class="mega-menu__link">
+                          <span class="mega-menu__link-icon"
+                            ><i
+                              class="bi bi-envelope-fill"
+                              aria-hidden="true"
+                            ></i
+                          ></span>
+                          <span class="mega-menu__link-text">
+                            <strong>Contact Us</strong>
+                            <small>Bangladesh &amp; USA offices</small>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile offcanvas nav -->
+    <div
+      class="offcanvas offcanvas-end offcanvas-nav"
+      tabindex="-1"
+      id="mobileNav"
+      aria-labelledby="mobileNavLabel"
+    >
+      <div class="offcanvas-header">
+        <div class="offcanvas-nav__brand" id="mobileNavLabel">
+          <img
+            src="./images/shaplafoundation-logo.png"
+            alt="Shapla Foundation"
+            width="160"
+            height="61"
+          />
+        </div>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close navigation menu"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <ul class="mobile-nav__list">
+            <li><a class="mobile-nav__link active" href="/">Home</a></li>
+
+            <li class="mobile-nav__group">
+              <button
+                class="mobile-nav__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="mobile-sub-sponsor-child"
+              >
+                Sponsor a Child
+                <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </button>
+              <ul class="mobile-nav__sub" id="mobile-sub-sponsor-child" hidden>
+                <li>
+                  <a href="/sponsor-a-child/awaiting-sponsorship"
+                    >Awaiting Sponsorship</a
+                  >
+                </li>
+                <li>
+                  <a href="/sponsor-a-child/currently-sponsored"
+                    >Currently Sponsored</a
+                  >
+                </li>
+                <li>
+                  <a href="/sponsor-a-child/faq">Frequently Asked Questions</a>
+                </li>
+                <li>
+                  <a href="/sponsor-a-child/activity-programs"
+                    >Activity Programs</a
+                  >
+                </li>
+                <li>
+                  <a href="/sponsor-a-child/completed-sponsorship"
+                    >Completed Sponsorship</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="mobile-nav__group">
+              <button
+                class="mobile-nav__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="mobile-sub-sponsor-project"
+              >
+                Sponsor a Project
+                <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </button>
+              <ul
+                class="mobile-nav__sub"
+                id="mobile-sub-sponsor-project"
+                hidden
+              >
+                <li>
+                  <a href="/sponsor-a-project/current-projects"
+                    >Current Projects</a
+                  >
+                </li>
+                <li>
+                  <a href="/sponsor-a-project/past-projects">Past Projects</a>
+                </li>
+                <li>
+                  <a href="/sponsor-a-project/zakat-donation">Zakat Donation</a>
+                </li>
+                <li><a href="/library">Shapla Foundation Library</a></li>
+              </ul>
+            </li>
+
+            <li class="mobile-nav__group">
+              <button
+                class="mobile-nav__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="mobile-sub-blog"
+              >
+                Blog
+                <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </button>
+              <ul class="mobile-nav__sub" id="mobile-sub-blog" hidden>
+                <li><a href="/blog">All Posts</a></li>
+                <li><a href="/blog/impact-stories">Impact Stories</a></li>
+                <li><a href="/blog/news">News &amp; Updates</a></li>
+                <li><a href="/blog/events">Events &amp; Celebrations</a></li>
+                <li><a href="/blog/ssc-success">Education Milestones</a></li>
+              </ul>
+            </li>
+
+            <li class="mobile-nav__group">
+              <button
+                class="mobile-nav__toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="mobile-sub-about"
+              >
+                About Us
+                <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </button>
+              <ul class="mobile-nav__sub" id="mobile-sub-about" hidden>
+                <li>
+                  <a href="/about-us/sponsored-child-visit-form"
+                    >Visit Your Child</a
+                  >
+                </li>
+                <li><a href="/about-us/careers">Careers</a></li>
+                <li>
+                  <a href="/about-us/virtual-meeting-with-sponsored-child"
+                    >Virtual Meeting With Child</a
+                  >
+                </li>
+                <li><a href="/about-us/success-stories">Success Stories</a></li>
+                <li><a href="/about-us/meet-the-team">Meet the Team</a></li>
+                <li><a href="/about-us/reviews">Reviews</a></li>
+                <li>
+                  <a href="/about-us/awards-and-affiliations">Affiliations</a>
+                </li>
+                <li><a href="/about-us/contact-us">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="mt-4">
+          <a
+            href="tel:+18885551234"
+            class="site-header__phone d-inline-flex mb-3"
+          >
+            <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+            (888) 555-1234
+          </a>
+          <a
+            href="https://www.paypal.com/donate/?hosted_button_id=SG6KT5EYHV5QE"
+            class="btn-pill btn-accent-pill w-100"
+            >Sponsor a Child</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="common-sec">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-last mb-4 mb-lg-0">
+                    <div class="dvMap"><iframe src="https://www.youtube.com/embed/yxmNtNLBWZ4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Sponsor a Child Education Program in Bangladesh</h1>
+                    <p>There are a lot of reasons why around 600,000 children in Bangladesh are deprived of basic education. Each child has a different problem from the others. However,  a huge and common hurdle between a child and their education is poverty. With our passionate and enthusiastic team in Bangladesh, we are able to target the funds provided by you directly to the families that are truly facing such hurdles.</p>
+                    <p>Shapla Foundation’s child sponsorship program is designed with 21st century technology in mind. Our
+                        software gives you the ability to view how your funds are being used for the child you sponsor. We
+                        have layers of management and checks in place to ensure the funding collected for a child actually
+                        benefits the child. Our software logs all expenses associated with a child down to the penny to
+                        ensure proper accountability of the funds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="common-sec inner_cta" aria-labelledby="inner-cta-heading">
+      <div class="inner_cta__bg" aria-hidden="true">
+        <span class="inner_cta__shape inner_cta__shape--1"></span>
+        <span class="inner_cta__shape inner_cta__shape--2"></span>
+      </div>
+      <div class="container">
+        <div class="inner_cta__header">
+          <span class="inner_cta__eyebrow">Take the Next Step</span>
+          <h2 id="inner-cta-heading">Explore sponsorship options</h2>
+          <p>
+            Meet children waiting for support, see active sponsorships, or find
+            answers before you begin.
+          </p>
+        </div>
+        <div class="inner_cta__grid">
+          <a href="/awaiting-sponsorship" class="inner_cta__card inner_cta__card--featured">
+            <span class="inner_cta__icon" aria-hidden="true">
+              <i class="bi bi-heart-fill"></i>
+            </span>
+            <strong class="inner_cta__title">Awaiting Sponsorship</strong>
+            <p class="inner_cta__desc">
+              Browse children ready for a sponsor and start changing a life today.
+            </p>
+            <span class="inner_cta__action">
+              View children
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </span>
+          </a>
+          <a href="/currently-sponsoring" class="inner_cta__card">
+            <span class="inner_cta__icon" aria-hidden="true">
+              <i class="bi bi-people-fill"></i>
+            </span>
+            <strong class="inner_cta__title">Currently Sponsored</strong>
+            <p class="inner_cta__desc">
+              See children already supported by generous sponsors like you.
+            </p>
+            <span class="inner_cta__action">
+              See stories
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </span>
+          </a>
+          <a href="/sponsor-a-child/faq" class="inner_cta__card">
+            <span class="inner_cta__icon" aria-hidden="true">
+              <i class="bi bi-question-circle-fill"></i>
+            </span>
+            <strong class="inner_cta__title">Frequently Asked Questions</strong>
+            <p class="inner_cta__desc">
+              Learn how sponsorship works, where funds go, and what to expect.
+            </p>
+            <span class="inner_cta__action">
+              Read FAQ
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="common-sec">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-lg-0"><img src="./images/sponsor-a-child-in-bangladesh.png" alt="How is the Money Being Used"></div>
+              <div class="col-lg-6">
+                  <h2>How is the Money Being Used?</h2>
+                  <p>Although, we are a non-profit organization, we still need funds to operate.</p>
+                  <ul class="checked">
+                      <li>70% of the donation goes to child’s expenses.</li>
+                      <li>22% goes to Caretaker’s expenses (includes salary/travel expenses).</li>
+                      <li>8% goes to marketing &amp; administration fees.</li>
+                  </ul>
+                  <p>Shapla Foundation is managed by corporate volunteers. Our biggest expense is hiring fantastic
+                      Caretakers who manage the day to day responsibilities of taking care of children’s expenses. We hire
+                      people who truly enjoy working with kids and want to help them be successful.</p>
+                  <p>We select children that truly need your financial help</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="common-sec">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-last mb-4 mb-lg-0">
+                <img src="./images/sponsor-childs-education.png" alt="How Does Sponsorship Work?">
+            </div>
+            <div class="col-lg-6">
+                <h3>How Does Sponsorship Work?</h3>
+                <p>Shapla Foundation works with local schools in Bangladesh to recruit children in our program. Some
+                    children need educational expenses and some need more in terms of food, clothing and shelter
+                    expenses addition to educational expenses.</p>
+                <p>Sponsor selects a program and Shapla Foundation will connect the sponsor with a child that has been
+                    on the waiting list to be sponsored. Each sponsorship program lasts about a year or school season.
+                    Once the program expires the sponsor has the ability to re-sponsor the child for additional year or
+                    sponsor someone else.</p>
+                <p>A Caretaker is assigned to each sponsored child who is responsible for spending funds on child’s
+                    behalf. This includes tuition fees, school supply purchases, food or uniform purchases, etc.
+                    Caretaker is NEVER allowed to give CASH to child or parents. We keep receipts of all purchases and
+                    upload them to our software for approval. A manager than approves all funds to make sure Caretaker
+                    is following his/her duties properly. Sponsor can see all activities of funds being used for a
+                    child.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="common-sec sponsor-a-child-cta" aria-labelledby="sponsor-cta-heading">
+  <div class="container">
+    <div class="sponsor-a-child-cta__panel">
+      <div class="sponsor-a-child-cta__glow" aria-hidden="true"></div>
+      <div class="sponsor-a-child-cta__content">
+        <h3 id="sponsor-cta-heading">
+          Spend Your Money for a Greater Cause,
+          It is Only $30!!!
+        </h3>
+        <p>
+          Sponsor a child in Bangladesh and fund education, care, and a
+          brighter future — starting today.
+        </p>
+      </div>
+      <a
+        href="/sponsor-a-child/awaiting-sponsorship.html"
+        class="btn-pill btn-accent-pill sponsor-a-child-cta__btn"
+      >
+        Sponsor Now
+        <i class="bi bi-heart-fill" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <!-- 10. Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="footer-logo mb-3">
+              <img
+                src="./images/shaplafoundation-logo.png"
+                alt="Shapla Foundation"
+                width="160"
+                height="61"
+              />
+            </div>
+            <p>
+              Shapla Foundation is a 501(c)(3) nonprofit dedicated to sponsoring
+              underprivileged children's education in Bangladesh.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://share.google/HUxDUYWqmraYpXi5o"
+                aria-label="Follow Shapla Foundation on Google"
+                ><i class="bi bi-google" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/shaplafoundation/"
+                aria-label="Follow Shapla Foundation on Facebook"
+                ><i class="bi bi-facebook" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/shapla_foundation/"
+                aria-label="Follow Shapla Foundation on Instagram"
+                ><i class="bi bi-instagram" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://twitter.com/ShaplaF"
+                aria-label="Follow Shapla Foundation on X"
+                ><i class="bi bi-twitter-x" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/user/shaplafoundation"
+                aria-label="Follow Shapla Foundation on YouTube"
+                ><i class="bi bi-youtube" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/sponsor-a-child">Sponsor a Child</a></li>
+              <li>
+                <a
+                  href="https://www.paypal.com/donate/?hosted_button_id=SG6KT5EYHV5QE"
+                  >Donate</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h3>Contact — BD Office</h3>
+            <ul>
+              <li>Dhaka, Bangladesh</li>
+              <li>
+                <a href="mailto:bd@shapla.foundation">bd@shapla.foundation</a>
+              </li>
+              <li><a href="tel:+8801234567890">+880 1234-567890</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h3>Contact — USA Office</h3>
+            <ul>
+              <li><!-- TODO: replace placeholder copy -->New York, NY, USA</li>
+              <li>
+                <a href="mailto:info@shapla.foundation"
+                  >info@shapla.foundation</a
+                >
+              </li>
+              <li><a href="tel:+18885551234">(888) 555-1234</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <p class="mb-0">
+                &copy; 2026 Shapla Foundation. All rights reserved.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-bottom__links justify-content-md-end">
+                <a href="/terms">Terms of Use</a>
+                <a href="/privacy">Privacy Policy</a>
+                <span
+                  >Non-profit 501(c)(3) Organization | Tax ID: 45-2586741</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
